@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - Hassan</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1 class="logo">PORTFOLIO.</h1>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <h2>My name is <span>Hassan Muktar</span></h2>
+                <p class="tagline">I'm a UI Developer</p>
+            </div>
+            <div class="hero-img">
+                <img
+                    src="./images/mypic 2.png"
+                    alt="Hassan" />
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img
+                    src="images/secpic.png"
+                    alt="Profile" />
+            </div>
+            <div class="about-text">
+                <h3><span>Who am I</span><br>HELLO</h3>
+                <p>I’m Hassan Muktar, a passionate and creative individual with
+                    a strong interest in UI design, graphics, video editing, and
+                    branding. I believe that good design is more than just
+                    visuals — it’s about telling a story, solving problems, and
+                    creating experiences that people can connect with.p><br>
+                    <a href="about.html" class="read-more-btn">Read More</a>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section class="portfolio" id="portfolio">
+                <h2>MY WORK <span>awesome projects</span></h2>
+                <div class="filter">
+                    <button class="filter-btn active"
+                        data-category="all">All</button>
+                    <button class="filter-btn"
+                        data-category="graphic">Graphic</button>
+                    <button class="filter-btn"
+                        data-category="videos">Videos</button>
+                    <button class="filter-btn"
+                        data-category="webdesign">Webdesign</button>
+                    <button class="filter-btn"
+                        data-category="branding">Branding</button>
+                </div>
+
+                <div class="grid" id="portfolio-grid"></div>
+
+                <div class="load-more">
+                    <button id="loadMoreBtn">Load More</button>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <p>Let's work together or just say hello.</p>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email"
+                                placeholder="Your Email"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject"
+                                placeholder="Subject" />
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                        <p class="form-status" id="formStatus"></p>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer
+                style="background-color: #222; color: #fff; padding: 40px 0; text-align: center;">
+                <div class="container">
+                    <p style="margin-bottom: 10px;">&copy; 2025 Portfolio -
+                        Hassan.
+                        All rights reserved.</p>
+                    <p>
+                        <a class="active" href="index.html"
+                            style="color: #fff; margin: 0 10px; text-decoration: none;">Home</a>
+                        |
+                        <a href="about.html"
+                            style="color: #fff; margin: 0 10px; text-decoration: none;">About</a>
+                        |
+                        <a href="contact.html"
+                            style="color: #fff; margin: 0 10px; text-decoration: none;">Contact</a>
+                    </p>
+                </div>
+            </footer>
+
+            <script src="script.js"></script>
+        </body>
+    </html>
